@@ -1,8 +1,12 @@
 # set-param
 
-> set-param is a library to set a parameter
+> set-param is a library to set parameters.
 
 [![NPM](https://img.shields.io/npm/v/set-param.svg)](https://www.npmjs.com/package/set-param) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Demo
+
+https://tagty.github.io/set-param
 
 ## Install
 
@@ -22,7 +26,13 @@ export default () => {
     setParam({ bar: 'aaa' })
   }, [])
 
-  return <h1>setParam!</h1>
+  return (
+    <div>
+      <h1>set-param</h1>
+      <p>bar is aaa.</p>
+      <button onClick={() => setParam({ buz: 'bbb' })}>set bbb on buz</button>
+    </div>
+  )
 }
 ```
 
